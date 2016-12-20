@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pub.xgan.rxdemo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/simpleButton"
+                android:text="Demo1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/simpleButton"
+                android:text="Demo2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/simpleButton"
+                android:text="Demo3" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

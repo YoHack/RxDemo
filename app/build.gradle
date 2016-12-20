@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
+
+android {
+    compileSdkVersion rootProject.ext.compile_sdk_version
+    buildToolsVersion rootProject.ext.build_tools_version
+    defaultConfig {
+        applicationId "pub.xgan.rxdemo"
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+    compile rootProject.ext.okHttp
+    compile (rootProject.ext.retrofit){
+        exclude module: 'okhttp'
+    }
+    compile rootProject.ext.design
+    compile rootProject.ext.gson
+    compile rootProject.ext.retrofitConverterGson
+
+    compile rootProject.ext.rxJava
+    compile (rootProject.ext.rxAndroid){
+        exclude module: 'rxjava'
+    }
+    compile (rootProject.ext.rxRelay){
+        exclude module: 'rxjava'
+    }
+}

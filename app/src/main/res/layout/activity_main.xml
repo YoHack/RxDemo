@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pub.xgan.rxdemo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/simpleButton"
+                android:text="Basic" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/simpleButton"
+                android:text="ThreadChange" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/simpleButton"
+                android:text="Transfer" />
+
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/simpleButton"
+                android:text="Zip" />
+
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/simpleButton"
+                android:text="OOM理解" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/simpleButton"
+                android:text="操作符" />
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/simpleButton"
+                android:text="筛选操作符" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/simpleButton"
+                android:text="合并操作符" />
+
+            <Button
+                android:id="@+id/btn_1000"
+                style="@style/simpleButton"
+                android:text="Some Etc" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
